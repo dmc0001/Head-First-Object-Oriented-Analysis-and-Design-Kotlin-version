@@ -1,0 +1,74 @@
+<!-- res/layout/item_guitar.xml -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Serial Number -->
+        <TextView
+            android:id="@+id/tvSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial Number: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Model -->
+        <TextView
+            android:id="@+id/tvModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model: "
+            android:textSize="16sp" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $"
+            android:textSize="16sp" />
+
+        <!-- Builder -->
+        <TextView
+            android:id="@+id/tvBuilder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Builder: "
+            android:textSize="16sp" />
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:textSize="16sp" />
+
+        <!-- Back Wood -->
+        <TextView
+            android:id="@+id/tvBackWood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back Wood: "
+            android:textSize="16sp" />
+
+        <!-- Top Wood -->
+        <TextView
+            android:id="@+id/tvTopWood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Wood: "
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

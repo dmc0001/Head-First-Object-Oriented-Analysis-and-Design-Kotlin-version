@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guitar_inventory_nav_graph"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.example.chan1.ui.fragment.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry" >
+        <action
+            android:id="@+id/action_entryFragment_to_rickysFragment"
+            app:destination="@id/rickysFragment" />
+        <action
+            android:id="@+id/action_entryFragment_to_clientFragment"
+            app:destination="@id/clientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rickysFragment"
+        android:name="com.example.chan1.ui.fragment.ricky.RickysFragment"
+        android:label="fragment_rickys"
+        tools:layout="@layout/fragment_rickys" />
+    <fragment
+        android:id="@+id/clientFragment"
+        android:name="com.example.chan1.ui.fragment.client.ClientFragment"
+        android:label="fragment_client"
+        tools:layout="@layout/fragment_client" />
+</navigation>
